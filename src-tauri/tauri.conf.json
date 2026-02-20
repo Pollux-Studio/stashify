@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "stashify",
+  "productName": "Stashify",
   "version": "0.1.0",
   "identifier": "com.polluxstudio.stashify",
   "build": {
@@ -14,7 +14,13 @@
       {
         "title": "stashify",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "minWidth": 1320,
+        "minHeight": 868,
+        "center": true,
+        "maximized": false,
+        "fullscreen": false,
+        "decorations": false
       }
     ],
     "security": {
@@ -24,12 +30,24 @@
   "bundle": {
     "active": true,
     "targets": "all",
+    "publisher": "Pollux Studio",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "windows": {
+      "wix": {
+        "bannerPath": "installer/wix-banner.bmp",
+        "dialogImagePath": "installer/wix-dialog.bmp"
+      },
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "headerImage": "installer/nsis-header.bmp",
+        "sidebarImage": "installer/nsis-sidebar.bmp"
+      }
+    }
   }
 }
