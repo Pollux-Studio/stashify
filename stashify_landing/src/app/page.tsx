@@ -181,6 +181,8 @@ type Direction = "up" | "down" | "left" | "right";
 const BOARD_SIZE = 12;
 const CONFLICT_COUNT = 10;
 const GAME_TICK_MS = 460;
+const DOWNLOAD_URL =
+  "https://github.com/Pollux-Studio/stashify/releases/download/v0.1.0/Stashify_0.1.0_x64-setup.exe";
 const INITIAL_SNAKE: Cell[] = [
   { x: 4, y: 6 },
   { x: 3, y: 6 },
@@ -493,7 +495,8 @@ export default function Home() {
         <div className="reveal-up delay-200 flex items-center gap-2">
           <a
             className="bg-primary text-primary-foreground hover:bg-primary/90 hidden items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition-colors sm:inline-flex"
-            href="#download"
+            href={DOWNLOAD_URL}
+            rel="noreferrer"
           >
             <WindowsGlyph />
             Download
@@ -544,8 +547,9 @@ export default function Home() {
               </a>
               <a
                 className="bg-primary text-primary-foreground hover:bg-primary/90 mt-1 inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-center transition-colors"
-                href="#download"
+                href={DOWNLOAD_URL}
                 onClick={() => setIsMenuOpen(false)}
+                rel="noreferrer"
               >
                 <WindowsGlyph />
                 Download
@@ -951,7 +955,8 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-emerald-950 transition-colors hover:bg-emerald-300"
-              href="#"
+              href={DOWNLOAD_URL}
+              rel="noreferrer"
             >
               Download for Windows
             </a>
@@ -1115,7 +1120,8 @@ export default function Home() {
             </ul>
             <a
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-emerald-50 transition-colors hover:bg-emerald-500"
-              href="#"
+              href={DOWNLOAD_URL}
+              rel="noreferrer"
             >
               <WindowsGlyph />
               Download
