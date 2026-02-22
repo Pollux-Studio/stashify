@@ -582,10 +582,16 @@ export default function Home() {
                 Explore Stashify
               </a>
               <a
-                className="border-border hover:bg-card rounded-full border bg-white/75 px-6 py-3 text-sm font-semibold transition-colors"
-                href="#workflow"
+                href="https://www.producthunt.com/products/stashify?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-stashify"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                See Workflow
+                <img
+                  alt="Stashify - Workspace Diff Console | Product Hunt"
+                  height="54"
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1083156&theme=light&t=1771749562438"
+                  width="250"
+                />
               </a>
             </div>
             <div className="reveal-up delay-300 grid max-w-xl gap-3 sm:grid-cols-3">
